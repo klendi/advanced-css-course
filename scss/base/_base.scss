@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //this decides what 1rem is, for eg, if you set this to 10px, 1rem = 10px
+  font-size: $global-font-size;
+
+  @media (max-width: 600px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
